@@ -3,13 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>下載專區／更新紀錄｜工程監造工作系統</title>
+  <title>施工照片／更新紀錄｜工程監造工作系統</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .photo-section { margin: 1rem 0 2rem; }
+    .photo-embed-wrap { position: relative; width: 100%; margin-top: 0.75rem; border: 1px solid #d4e4d4; border-radius: 6px; overflow: hidden; background: #f4f8f4; }
+    .photo-embed-wrap iframe { width: 100%; height: 600px; border: 0; display: block; }
+    .photo-fallback { margin-top: 0.5rem; font-size: 0.9rem; color: #555; }
+    .photo-fallback a { color: #2c5f2e; font-weight: 600; }
+    @media (max-width: 640px) {
+      .photo-embed-wrap iframe { height: 500px; }
+    }
+  </style>
+
 </head>
 <body>
 <header>
   <div class="header-inner">
-    <div class="badge">第五版 V5.9｜更新日期：2026/07/03</div>
+    <div class="badge">第六版 V6.4｜更新日期：2026/07/04</div>
     <h1>工程監造工作系統</h1>
     <p class="subtitle">東勢林業文化園區禮堂整修為遊客中心暨設施改善工程 — 監造工作統一入口</p>
   </div>
@@ -17,16 +28,25 @@
 <nav>
   <div class="nav-inner">
     <a href="index.html">首頁</a>
-    <a href="workflow.html">工程概要</a>
+    <a href="calendar.html">行事曆</a>
+    <a href="workflow.html">工程概要及進度</a>
     <a href="quality.html">材料品質管理</a>
     <a href="construction-quality.html">施工品質管理</a>
     <a href="safety.html">施工安全衛生</a>
-    <a href="templates.html">工程文件範本</a>
-    <a href="faq.html">常見問題 FAQ</a>
-    <a href="downloads.html">下載專區／更新紀錄</a>
+    <a href="downloads.html">施工照片／更新紀錄</a>
   </div>
 </nav>
 <main>
+
+
+<h2 class="section-title">施工照片</h2>
+<div class="photo-section">
+  <p style="color:#555; margin-bottom:0.5rem;">施工照片依施工日期與工項分類儲存於 Google 雲端硬碟，共 12 個資料夾（期間：115/4/11 ~ 115/6/23）。以下嵌入雲端硬碟資料夾預覽，Google 系統自動產生縮圖。</p>
+  <div class="photo-embed-wrap">
+    <iframe src="https://drive.google.com/embeddedfolderview?id=1NMBA2gqfhrCs-UnJwIyfyfu7WU0T1zWn#grid" allowfullscreen loading="lazy" title="施工照片 Google 雲端硬碟資料夾預覽"></iframe>
+  </div>
+  <p class="photo-fallback">若上方預覽無法顯示，請直接開啟：<a href="https://drive.google.com/drive/folders/1NMBA2gqfhrCs-UnJwIyfyfu7WU0T1zWn?usp=sharing" target="_blank" rel="noopener">施工照片 Google 雲端硬碟資料夾 ↗</a></p>
+</div>
 
 <h2 class="section-title">下載專區</h2>
 <div class="search-box"><input id="tableSearch" placeholder="輸入關鍵字搜尋檔案名稱、版本或類別"></div>
@@ -53,11 +73,7 @@
     <tr data-search-row><td>施工抽查</td><td>屋頂防水工程抽查紀錄表</td><td>V1.0</td><td>2026/07/03</td><td>編號 DF97-5-SC-B-1 至 B-3（3 份合集）。</td></tr>
     <tr data-search-row><td>施工抽查</td><td>機電消防工程抽查紀錄表</td><td>V1.0</td><td>2026/07/03</td><td>編號 DF97-5-SC-F-1（1 份）。</td></tr>
     <tr data-search-row><td>施工抽查</td><td>木作展示櫃工程抽查紀錄表</td><td>V1.0</td><td>2026/07/03</td><td>編號 DF97-5-SC-E-1 至 E-2（2 份合集）。</td></tr>
-        <tr data-search-row><td>施工照片</td><td>115年3月 施工照片集</td><td>V0.1</td><td>2026/07/02</td><td>預留項目，待上傳施工照片檔案。</td></tr>
-    <tr data-search-row><td>施工照片</td><td>115年4月 施工照片集</td><td>V0.1</td><td>2026/07/02</td><td>預留項目，待上傳施工照片檔案。</td></tr>
-    <tr data-search-row><td>施工照片</td><td>115年5月 施工照片集</td><td>V0.1</td><td>2026/07/02</td><td>預留項目，待上傳施工照片檔案。</td></tr>
-    <tr data-search-row><td>施工照片</td><td>115年6月 施工照片集</td><td>V0.1</td><td>2026/07/02</td><td>預留項目，待上傳施工照片檔案。</td></tr>
-  </tbody>
+      </tbody>
 </table>
 
 <h2 class="section-title">更新紀錄</h2>
@@ -66,6 +82,11 @@
     <tr><th>日期</th><th>版本</th><th>修訂項目</th><th>修訂說明</th><th>修訂人</th></tr>
   </thead>
   <tbody>
+    <tr><td>2026/07/04</td><td>V6.4</td><td>分頁更名</td><td>將分頁名稱「工程概要」改為「工程概要及進度」；同步更新全部 7 個頁面之導覽列、首頁快速連結、workflow.html 之 title 與 h2 主標題。檔名 workflow.html 維持不變；下載專區「工程概要（監造工作流程圖）」檔案名稱、首頁「工程概要事項紀錄」章節標題及所有歷史 changelog 條目均維持原文。</td><td>網站管理員</td></tr>
+    <tr><td>2026/07/03</td><td>V6.3</td><td>新增行事曆分頁</td><td>（1）新增獨立「行事曆」分頁（calendar.html），置於「首頁」與「工程概要」之間。（2）將首頁原「行事曆」章節整段搬移至新分頁，含類別統計條（11 類）與可捲動表格（101 筆事件）。（3）行事曆相關 CSS（.calendar-*、.event-tag、.tag-*、.filter-bar 等）一併搬移至 calendar.html。（4）全部 7 個頁面之導覽列同步加入「行事曆」連結。（5）首頁其餘章節（系統簡介、最新公告、工程進度摘要、主要工項完成率、更新資訊）維持不動。</td><td>網站管理員</td></tr>
+    <tr><td>2026/07/03</td><td>V6.2</td><td>分頁縮減</td><td>（1）刪除「工程文件範本」分頁（templates.html）；（2）刪除「常見問題 FAQ」分頁（faq.html）；（3）全部剩餘 6 個頁面之導覽列同步移除相關連結；（4）首頁「系統簡介」段落文字調整（移除「工程文件範本、FAQ」用詞）；（5）下載專區「範本」類別 2 筆下載項目維持不變（比照 V5.8「監造查驗表單」分頁移除時之處理原則）。</td><td>網站管理員</td></tr>
+    <tr><td>2026/07/03</td><td>V6.1</td><td>施工安全衛生改版</td><td>「施工安全衛生」分頁全部內容重寫，內容取自使用者上傳之「職安衛施工風險評估報告」（顧問初評 2026.07.03）。新版含：（1）圖面風險熱點 6 項；（2）風險排序表 6 項含分數與控制措施；（3）立即停工條件；（4）現場閉環管控流程 5 步驟；（5）工程與管理措施 6 大類；（6）教育訓練矩陣 7 對象；（7）查核關卡 A~E；（8）30 天追蹤指標；（9）法規基線。原檔為 A4 橫向列印版且含無法取得的平面圖圖檔，本次以網站統一樣式重寫，圖面 6 個風險 pin 改為文字說明。</td><td>網站管理員</td></tr>
+    <tr><td>2026/07/03</td><td>V6.0</td><td>施工照片整合</td><td>（1）分頁名稱由「下載專區／更新紀錄」改為「施工照片／更新紀錄」；檔名維持 downloads.html。（2）分頁最上方新增「施工照片」章節，以 iframe 嵌入 Google 雲端硬碟父資料夾（ID: 1NMBA2gqfhrCs-UnJwIyfyfu7WU0T1zWn），Google 系統自動顯示 12 個子資料夾之縮圖預覽（格狀模式）。（3）加入 fallback 連結，若 iframe 無法載入可直接開啟雲端硬碟。（4）下載專區區塊之「施工照片」類別 4 筆預留項目移除，其餘下載類別（流程、表單、品質、範本、施工抽查）維持不動。（5）加入響應式樣式，手機端 iframe 高度調整為 500px。</td><td>網站管理員</td></tr>
     <tr><td>2026/07/03</td><td>V5.9</td><td>施工抽查紀錄表匯入</td><td>（1）「施工品質管理」分頁新增「二、施工抽查紀錄表」章節，位於「施工抽查工項一覽」之後、「不合格改善紀錄」之前；含 7 筆紀錄摘要表格與 PDF 下載連結。（2）打包 4 份 PDF 檔至 assets/pdf/。（3）原「二、不合格改善紀錄」順延為「三、不合格改善紀錄」。（4）不合格改善紀錄表「位置」、「缺失」欄加入 white-space:nowrap 與 min-width:140px，避免文字換行為多段。（5）版本 V5.8→V5.9，日期 07/02→07/03。</td><td>網站管理員</td></tr>
     <tr><td>2026/07/02</td><td>V5.8</td><td>分頁重組</td><td>（1）將原「監造查驗表單」分頁之「施工抽查工項一覽」章節搬移至「施工品質管理」分頁，作為新的「一、施工抽查工項一覽」，位於「不合格改善紀錄」上方；（2）原「不合格改善紀錄（施工抽查不符合事項）」章節編號自「一、」順延為「二、」；（3）刪除「監造查驗表單」分頁（inspection-forms.html），並移除全部頁面導覽列與首頁快速連結中的相關項目；（4）「監造查驗表單」原第二節「不符合事項追蹤管制」隨分頁一併移除；該表 10 筆資料已完整涵蓋於「施工品質管理\二、不合格改善紀錄」之擴充版表格。</td><td>網站管理員</td></tr>
     <tr><td>2026/07/02</td><td>V5.7</td><td>不合格改善紀錄日期對齊</td><td>依使用者指示（選項 B，套用全部 10 筆），將「施工品質管理\一、不合格改善紀錄」表格中「限定完成改善日期、改善複檢日期、結案日期、缺失改善日期」四欄一律改為與該項次之「檢驗日期」相同。項次 6–10 原本三欄為「—」者亦一併填入對應日期。表格下方說明文字同步調整。</td><td>網站管理員</td></tr>
@@ -90,7 +111,7 @@
 <footer>
   <div class="footer-inner">
     <strong>工程監造工作系統</strong><br>
-    本網站為工程監造內部工作資料平台第五版，實際表單、規範與作業程序仍應依契約、核定計畫、主管機關規定及最新法規辦理。
+    本網站為工程監造內部工作資料平台第六版，實際表單、規範與作業程序仍應依契約、核定計畫、主管機關規定及最新法規辦理。
   </div>
 </footer>
 <script src="assets/js/app.js"></script>
